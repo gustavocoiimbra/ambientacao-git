@@ -1,8 +1,11 @@
 def ordenacao_selecao(A):
   cont = 0
-  while True:
-    if A[cont] == null:
-      n = cont
-      
-      for i in range(n):
-        minimo = i
+
+  for i in range(len(A)):
+    minimo = i
+
+    for j in range(i + 1, len(A)):
+      if A[minimo] > A[j]:
+        minimo = j
+
+        A[i], A[minimo] = A[minimo], A[i]
