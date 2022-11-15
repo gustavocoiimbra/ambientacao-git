@@ -14,5 +14,8 @@ def ordenacao_selecao(A):
 
 A = random.sample(range(-10, 10), 10)
 
+print("Arranjo não ordenado", A)
+
 ordenacao_selecao(A)
 
+print("Arranjo ordenado", A)
