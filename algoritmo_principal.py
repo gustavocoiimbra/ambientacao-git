@@ -1,3 +1,5 @@
+import random
+
 def ordenacao_selecao(A):
   cont = 0
 
@@ -9,3 +11,8 @@ def ordenacao_selecao(A):
         minimo = j
 
         A[i], A[minimo] = A[minimo], A[i]
+
+A = random.sample(range(-10, 10), 10)
+
+ordenacao_selecao(A)
+
