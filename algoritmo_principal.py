@@ -2,7 +2,8 @@ import random
 
 def ordenacao_selecao(A):
       n = len(A)
-      
+
+      # Encontra elemento mínimo em A
       for i in range(n):
         minimo = i
 
@@ -10,6 +11,7 @@ def ordenacao_selecao(A):
           if A[minimo] > A[j]:
             minimo = j
 
+      # Coloca elemento mínimo na posição correta (ordem crescente)
       A[i], A[minimo] = A[minimo], A[i]
 
 A = random.sample(range(-10, 10), 10)
